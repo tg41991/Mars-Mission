@@ -9,7 +9,7 @@ var Questions = React.createClass({
       var userAnswer = this.refs.answer.value;
       var rightAnswer = this.props.questions;
       var correctCount = this.state.correctCount;
-
+//Console error states var correctCount is undefined. There is a missing method required to get the value of correctCount from quiz.jsx
       if (rightAnswer === userAnswer) {
         correctCount = correctCount + 1;
       }

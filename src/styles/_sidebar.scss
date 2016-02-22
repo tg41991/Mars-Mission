@@ -1,11 +1,11 @@
 header {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: 0 1 20%;
   min-width: 150px;
   max-width: 150px;
+  position: relative;
+  display: flex;
+  flex: 0 1 20%;
+  align-items: center;
+  justify-content: center;
   font-weight: bold;
 }
 header h1 {
@@ -14,24 +14,27 @@ header h1 {
 }
 
 .logo {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
+  background: linear-gradient(to top, #fd746c, #ff9068);
   font-size: 0.5rem;
   letter-spacing: 0.5rem;
   text-transform: uppercase;
   font-weight: bold;
-  width: 100px;
-  height: 100px;
   line-height: 1rem;
-  background: linear-gradient(to top, #fd746c, #ff9068);
   color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
 }
 
 i.fa-space-shuttle {
   transform: rotate(-90deg);
   position: relative;
+  top: -1px;
+  left: -2px;
   font-size: 4rem;
-  text-shadow: 0 1px 0 #ccc, 1px 1px 4px rgba(0,0,0, 0.1), 1px 1px 4px rgba(0,0,0, 0.3);
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
 }
