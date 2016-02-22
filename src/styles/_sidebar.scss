@@ -1,0 +1,37 @@
+header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 1 20%;
+  min-width: 150px;
+  max-width: 150px;
+  font-weight: bold;
+}
+header h1 {
+  position: absolute;
+  transform:translateX(-75px) rotate(270deg);
+}
+
+.logo {
+  border-radius: 50%;
+  font-size: 0.5rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 100px;
+  height: 100px;
+  line-height: 1rem;
+  background: linear-gradient(to top, #fd746c, #ff9068);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+i.fa-space-shuttle {
+  transform: rotate(-90deg);
+  position: relative;
+  font-size: 4rem;
+  text-shadow: 0 1px 0 #ccc, 1px 1px 4px rgba(0,0,0, 0.1), 1px 1px 4px rgba(0,0,0, 0.3);
+}
