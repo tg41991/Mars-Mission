@@ -7,17 +7,14 @@ var Questions = React.createClass({
   //checks if the answer values match those in the array, and switches to the next question
     _handleEvaluateAnswer: function() {
       var userAnswer = this.refs.answer.value;
-      var rightAnswer = this.props.questions;
-      var correctCount = this.state.correctCount;
-//Console error states var correctCount is undefined. There is a missing method required to get the value of correctCount from quiz.jsx
-      if (rightAnswer === userAnswer) {
-        correctCount = correctCount + 1;
-      }
+      var rightAnswer = this.props.rightAnswer;
 
-      this.setState({
-        correctCount: correctCount,
-        index: this.state.index + 1
-      });
+      if (rightAnswer === userAnswer) {
+        this.props.onAnswer(true)
+      } else {
+        this.props.onAnswer(false)
+      }
+      this.refs.answer.value = '';
     },
 
   render: function() {

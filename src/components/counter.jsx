@@ -11,16 +11,14 @@ var Counter = React.createClass({
     }
   },
 
-  resetTimer: function() {
-    clearInterval(this.interval);
-    this.setState({ countdownSeconds: 60 });
+  handleTimeout: function() {
     browserHistory.push('/rejected')
   },
 
   tick: function() {
     this.setState({countdownSeconds: this.state.countdownSeconds - 1});
     if (this.state.countdownSeconds <= 0) {
-      this.resetTimer();
+      this.handleTimeout();
     }
   },
 
@@ -30,6 +28,10 @@ var Counter = React.createClass({
 
   componentDidMount:function(nextProps) {
       this.start();
+  },
+
+  componentWillUnmount: function() {
+    clearInterval(this.interval);
   },
 
   render: function() {

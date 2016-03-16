@@ -2,10 +2,18 @@
 
 var React = require('react');
 
+import {browserHistory} from 'react-router';
+
 var Rejected = React.createClass({
 
   returnToBegin: function() {
     browserHistory.push('/begin')
+  },
+
+  componentDidMount: function() {
+    setTimeout((function() {
+      browserHistory.push('/begin');
+    }), 3000);
   },
 
   render: function() {

@@ -9,7 +9,6 @@ var NotFound= React.createClass({
       <div>404 Not Found</div>
     );
   }
-
 });
 
 module.exports = NotFound;
