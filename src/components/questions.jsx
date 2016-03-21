@@ -4,7 +4,7 @@ var React = require('react');
 
 var Questions = React.createClass({
 
-  //checks if the answer values match those in the array, and switches to the next question
+  //checks if the answer values match those in the array
     _handleEvaluateAnswer: function() {
       var userAnswer = this.refs.answer.value;
       var rightAnswer = this.props.rightAnswer;

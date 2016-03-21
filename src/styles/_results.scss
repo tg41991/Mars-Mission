@@ -5,6 +5,7 @@
   align-items: center;
   height: 100%;
   width: 100%;
+  animation: pulse 1s infinite;
 }
 
 .failure {
@@ -14,4 +15,20 @@
   align-items: center;
   height: 100%;
   width: 100%;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }

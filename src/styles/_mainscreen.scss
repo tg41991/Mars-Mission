@@ -10,6 +10,8 @@
   background: linear-gradient(to right, #fd746c, #ff9068);
 }
 
+// Timer //
+
 .countdown  {
   height: 75px;
   width: 200px;
@@ -43,11 +45,11 @@
     font-family: 'digital clock';
     font-weight: bold;
     font-size: 4rem;
-    text-shadow: 0 0 2px #ffc04c;
+    text-shadow: 0 0 2px #ffc65d, 0 0 8px #ffcc6f, 0 0 10px #FFD993;
   }
 }
 
-
+// Quiz Box //
 
 .quizwrap {
   height: 200px;
