@@ -6,6 +6,7 @@
   height: 100%;
   width: 100%;
   animation: pulse 1s infinite;
+  background: #2bb532;
 }
 
 .failure {
@@ -16,6 +17,7 @@
   height: 100%;
   width: 100%;
   animation: pulse 1s infinite;
+  background: #f74020;
 }
 
 @keyframes pulse {

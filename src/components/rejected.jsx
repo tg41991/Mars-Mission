@@ -13,7 +13,7 @@ var Rejected = React.createClass({
   componentDidMount: function() {
     setTimeout((function() {
       browserHistory.push('/begin');
-    }), 3000);
+    }), 4000);
   },
 
   render: function() {
